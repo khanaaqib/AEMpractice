@@ -49,6 +49,7 @@ public class HelloWorldModel {
 
     @PostConstruct
     protected void init() {
+        String name="Aaqib";
         PageManager pageManager = resourceResolver.adaptTo(PageManager.class);
         String currentPagePath = Optional.ofNullable(pageManager)
                 .map(pm -> pm.getContainingPage(currentResource))
