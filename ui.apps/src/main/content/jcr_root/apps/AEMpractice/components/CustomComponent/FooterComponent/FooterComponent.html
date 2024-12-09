@@ -1,7 +1,24 @@
-<h3><a href="${properties.aboutUsPageUrl}" target="_blank" >${properties.aboutus}</a></h3>
-<h3><a href="${properties.contactUsPageUrl}" target="_blank">${properties.contactus}</a></h3>
-<h3><a href="${properties.resourcesPageUrl}" target="_blank">${properties.resources}</a></h3>
-<h3><a href="${properties.helpMePageUrl}" target="_blank">${properties.aboutus}</a></h3>
+
+
+<div data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
+    <div data-sly-call="${clientLib.css @ categories='footerComponent'}"/>
+</div>
+
+
+<div class="Footer">
+<div class="FooterElementSize">
+	<a href="${properties.aboutUsPageUrl}" target="_blank" >${properties.aboutus}</a>
+</div>
+<div class="FooterElementSize">
+    <a href="${properties.contactUsPageUrl}" target="_blank">${properties.contactus}</a>
+</div>
+<div class="FooterElementSize">
+    <a href="${properties.resourcesPageUrl}" target="_blank">${properties.resources}</a>
+</div>
+<div class="FooterElementSize">
+    <a href="${properties.helpMePageUrl}" target="_blank">${properties.aboutus}</a>
+</div>
+<div>
 
 
 

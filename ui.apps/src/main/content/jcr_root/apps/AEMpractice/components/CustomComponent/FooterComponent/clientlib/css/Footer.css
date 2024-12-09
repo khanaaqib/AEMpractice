@@ -1,0 +1,9 @@
+.Footer{
+ 	display: flex;
+ 	justify-content: space-around;
+}
+
+
+.FooterElementSize{
+    font-size: 20px;
+}
