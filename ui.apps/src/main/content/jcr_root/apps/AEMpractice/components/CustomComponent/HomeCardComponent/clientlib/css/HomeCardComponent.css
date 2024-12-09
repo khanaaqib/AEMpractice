@@ -1,0 +1,13 @@
+.card{
+    box-shadow: 4px 4px 8px 4px lightblue;
+    transition: 0.3s;
+    width:50%;
+}
+
+.image-card{
+   width: 100%
+}
+
+.content{
+ text-align: center;
+}

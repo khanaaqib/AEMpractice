@@ -1,3 +1,11 @@
-<img src="${properties.image}" alt="image path">
-<h3>${properties.imageTitle}</h3>
-<button>${properties.learnMore}</button>
+<div data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
+    <div data-sly-call="${clientLib.css @ categories='HomeCardComponent'}"/>
+</div>
+
+<div class="card">
+    <img src="${properties.image}" alt="image path" class="image-card">
+    <div class="content">
+        <h3 class="Title-text">${properties.imageTitle}</h3>
+        <button>${properties.learnMore}</button>
+    </div>
+</div>
