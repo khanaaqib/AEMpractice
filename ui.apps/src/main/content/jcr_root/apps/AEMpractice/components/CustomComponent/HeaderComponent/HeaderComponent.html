@@ -1,0 +1,20 @@
+
+<div data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
+    <div data-sly-call="${clientLib.css @ categories='header-component'}"/>
+</div>
+
+
+<div class="navigation-header">
+  <div class="main-header">
+    <div class="first-header-section">
+      <a href="${properties.homePageUrl}" target="_blank">${properties.homePage}</a>
+      <a href="#">${properties.courses}</a>
+      <a href="#">${properties.educator}</a>
+    </div>
+    <div class="second-header-section">
+      <a href="${properties.myAccountUrl}" target="_blank" >${properties.myAccountPage}</a>
+      <a href="${properties.loginPageUrl}" target="_blank" >${properties.loginPage}</a>        
+      <a href="${properties.registerPageUrl}" target="_blank" >${properties.registerPage}</a>
+    </div>
+ </div>
+</div>

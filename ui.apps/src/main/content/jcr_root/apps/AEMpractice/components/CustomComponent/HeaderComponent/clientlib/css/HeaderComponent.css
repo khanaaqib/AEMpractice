@@ -1,0 +1,42 @@
+.navigation-header{
+        height: auto;
+        top: 0;
+        background-color: #ab777700;
+        overflow: visible;
+        visibility: visible;
+        transition: none;
+        position: relative;
+    	left: 0;
+    	display: block;
+    	width: 100%;
+        background:black;
+}
+
+.navigation-header .main-header{
+		height: 100%;
+        overflow: visible;
+        margin: auto;
+        width: 80.612244898%;
+        padding-left: 64px;
+        display: flex;
+        justify-content: space-between;
+
+}
+
+.navigation-header .first-header-section{
+		display: inline-flex;
+        max-width: 51%;    
+}
+
+
+.navigation-header .second-header-section{
+        display: inline-flex;
+        max-width: 51%;
+}
+
+
+.navigation-header a{
+  padding: 50px 50px 50px 0px;
+  color: white;
+   
+}
