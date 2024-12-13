@@ -3,18 +3,26 @@
     <div data-sly-call="${clientLib.css @ categories='header-component'}"/>
 </div>
 
-
+<div data-sly-use.headerField="com.adobe.aem.tutorial.core.models.HeaderComponentModel">
 <div class="navigation-header">
   <div class="main-header">
     <div class="first-header-section">
-      <a href="${properties.homePageUrl}" target="_blank">${properties.homePage}</a>
-      <a href="#">${properties.courses}</a>
-      <a href="#">${properties.educator}</a>
+      <a href="${headerField.homePageUrl}" target="_blank">${headerField.homePage}</a>
+      <div class="subnav">
+        <a href="#">${headerField.courses}</a>
+        <div class="subnav-content">
+          <sly data-sly-list.subNavigationValue="${headerField.coursesMenu}">
+            <a href="${subNavigationValue.coursesUrl}" target="_blank" >${subNavigationValue.couresTitle}</a>
+          </sly>
+        </div>
+      </div>
+      <a href="#">${headerField.educator}</a>
     </div>
     <div class="second-header-section">
-      <a href="${properties.myAccountUrl}" target="_blank" >${properties.myAccountPage}</a>
-      <a href="${properties.loginPageUrl}" target="_blank" >${properties.loginPage}</a>        
-      <a href="${properties.registerPageUrl}" target="_blank" >${properties.registerPage}</a>
+      <a href="${headerField.myAccountUrl}" target="_blank" >${headerField.myAccountPage}</a>
+      <a href="${headerField.loginPageUrl}" target="_blank" >${headerField.loginPage}</a>        
+      <a href="${headerField.registerPageUrl}" target="_blank" >${headerField.registerPage}</a>
     </div>
  </div>
+</div>
 </div>
