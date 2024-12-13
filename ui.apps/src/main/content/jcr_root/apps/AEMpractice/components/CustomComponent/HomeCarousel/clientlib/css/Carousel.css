@@ -1,0 +1,11 @@
+.HomeCaoursel{
+ position: relative;
+ text-align:center;       
+
+}
+
+.image-section{
+    position:absolute;
+    top: 50%;
+    left:50%;    
+}
